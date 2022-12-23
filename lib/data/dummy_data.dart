@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:meals_app_flutter/models/ingredient.dart';
 
 import '../models/category.dart';
 import '../models/meal.dart';
+import '../models/ingredient.dart';
+
 
 const DUMMY_CATEGORIES = const [
   Category(
@@ -406,3 +409,40 @@ const DUMMY_MEALS = const [
     isLactoseFree: true,
   ),
 ];
+const DUMMY_INGREDIENTS = const [
+  Ingredient(id: '1',
+      title: 'milk',
+      // color: Colors.white70
+      imageUrl: 'https://ysm-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces:auto,h_1200,q_auto,w_1200/v1/yale-medicine/live-prod/ym_new/fortified%20milk_389648_5_v1.jpeg'
+  ),
+  Ingredient(id: '2',
+      title: 'bread',
+      // color: Colors.blue
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Korb_mit_Br%C3%B6tchen.JPG/1200px-Korb_mit_Br%C3%B6tchen.JPG'
+  ),
+  Ingredient(id: '3',
+      title: 'cheese',
+      imageUrl: 'https://images-prod.healthline.com/hlcmsresource/images/AN_images/healthiest-cheese-1296x728-swiss.jpg',
+  ),
+  Ingredient(id: '4',
+      title: 'tomatoo',
+    // color: Colors.redAccent
+      imageUrl: 'https://cdn.britannica.com/16/187216-050-CB57A09B/tomatoes-tomato-plant-Fruit-vegetable.jpg'
+  ),
+
+    Ingredient(id: '1',
+      title: 'milk',
+      // color: Colors.white
+      imageUrl: 'https://ysm-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces:auto,h_1200,q_auto,w_1200/v1/yale-medicine/live-prod/ym_new/fortified%20milk_389648_5_v1.jpeg'
+  ),
+  Ingredient(id: '1',
+      title: 'milk',
+      // color: Colors.teal
+      imageUrl: 'https://ysm-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces:auto,h_1200,q_auto,w_1200/v1/yale-medicine/live-prod/ym_new/fortified%20milk_389648_5_v1.jpeg'
+  ),
+
+
+
+
+
+  ];

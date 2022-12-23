@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meals_app_flutter/screens/pantry_page.dart';
 import 'package:provider/provider.dart';
 
 import 'categories_page.dart';
@@ -24,6 +25,10 @@ class _TabsPageState extends State<TabsPage> {
     {
       'page': FavoritesPage(),
       'title': 'Favorites',
+    },
+    {
+      'page': PantryPage(),
+      'title': 'My Pantry',
     },
   ];
 
@@ -61,6 +66,12 @@ class _TabsPageState extends State<TabsPage> {
             icon: Icon(Icons.favorite),
             label: "Favorites",
           ),
+          BottomNavigationBarItem(
+            backgroundColor: Theme.of(context).primaryColor,
+            icon: Icon(Icons.list),
+            label: "Pantry",
+          ),
+
         ],
       ),
     );
